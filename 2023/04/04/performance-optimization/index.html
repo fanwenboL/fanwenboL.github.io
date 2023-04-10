@@ -20,86 +20,98 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body id="bodyx">
-    <div class="hd logodiv">
-    <img src="/img/logo.png" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> Lynko 凛口 <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
-</div>
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/fanwenboL">Github</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            前端性能优化
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h2 id="性能优化（1）性能优化的指标和工具"><a href="#性能优化（1）性能优化的指标和工具" class="headerlink" title="性能优化（1）性能优化的指标和工具"></a>性能优化（1）性能优化的指标和工具</h2><ol>
+<li>为什么进行web性能优化</li>
+</ol>
+<ul>
+<li>访问速度</li>
+<li>用户体验</li>
+<li>搜索排名</li>
+</ul>
+<ol start="2">
+<li>寻找性能瓶颈</li>
+</ol>
+<ul>
+<li>性能指标</li>
+<li>利用工具个APIs</li>
+<li>优化问题，重新测试</li>
+</ul>
+<ol start="3">
+<li><p>浏览器network - 瀑布图</p>
+<ol>
+<li>网络</li>
+</ol>
+<ul>
+<li>横向看是具体资源加载<ul>
+<li>TTFB(请求发出到回来具体多久)</li>
+</ul>
+</li>
+<li>竖着看是资源之间联系<ul>
+<li>蓝色 DOM加载时间</li>
+<li>红色 资源加载完时间</li>
+<li>HAR 性能测试结果标准</li>
+</ul>
+</li>
+<li>加载<ul>
+<li>First Contentful Paint 白屏到出现内容的时间</li>
+<li>Speed Index 速度指数</li>
+<li>首次渲染</li>
+<li>TTFB</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>页面</li>
+</ol>
+<ul>
+<li>流畅度 69帧</li>
+<li>异步加载</li>
+</ul>
+</li>
+<li><p>RAIL模型</p>
+</li>
+</ol>
+<ul>
+<li>Response 响应体验(对用户而言：交互如点击按钮后的及时反馈)<ul>
+<li>处理事件应在50ms内完成</li>
+</ul>
+</li>
+<li>Animation 动画<ul>
+<li>每10ms产生1帧</li>
+</ul>
+</li>
+<li>Idle 空闲(浏览器要有足够的空闲时间,空出主线程)<ul>
+<li>尽可能空出主线</li>
+</ul>
+</li>
+<li>Load 加载<ul>
+<li>在5秒内完成内容加载并可以交互</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>性能测量工具</li>
+</ol>
+<ul>
+<li>Chrome DevTools 开发调试、性能评测</li>
+<li>Lighthouse 网站整体质量评估</li>
+<li>WebPageTest 多测试地点、全面性能报告</li>
+</ul>
+
+    </div>
+
     
-    
-        
-        
-            <div class="titlex">
-                <p><span class="jing">#</span>
-                    2023
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/2023/04/04/performance-optimization/">
-            <div class="list">
-                <div class="postname">
-                    前端性能优化
-                </div>
-                <div class="posttime">
-                    April 4th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-            <div class="titlex">
-                <p><span class="jing">#</span>
-                    2022
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/2022/12/07/tree/">
-            <div class="list">
-                <div class="postname">
-                    tree
-                </div>
-                <div class="posttime">
-                    December 7th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2022/11/28/webpacks/">
-            <div class="list">
-                <div class="postname">
-                    Webpack 原理
-                </div>
-                <div class="posttime">
-                    November 28th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2022/11/25/hello-world/">
-            <div class="list">
-                <div class="postname">
-                    简介
-                </div>
-                <div class="posttime">
-                    November 25th
-                </div>
-            </div>
-        </a>
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
 </div>
     <div class="footer" id="footer">
