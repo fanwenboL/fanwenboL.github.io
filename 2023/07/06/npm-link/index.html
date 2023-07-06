@@ -20,66 +20,39 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body id="bodyx">
-    <div class="hd logodiv">
-    <img src="/img/logo.png" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> Lynko 凛口 <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
-</div>
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/fanwenboL">Github</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            npm link
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
+<p>将本地开发的 二方包（npm 包）连接到本地项目中，主要用于开发方便调试。</p>
+</blockquote>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ul>
+<li>私服包(要引用的npm包)</li>
+</ul>
+<pre><code>    npm link
+</code></pre>
+<ul>
+<li>需要引用的项目</li>
+</ul>
+<pre><code>    // 经过测试，不删除nodemodule 中引用线上版本包的话好像不生效
+    npm un 包名
+    npm link 包名
+</code></pre>
+<ul>
+<li>完成上述操作后基本就成功了，本地的二方包代码修改后需要重新 yarn build 后可以生效。</li>
+</ul>
+
+    </div>
+
     
-    
-        
-        
-            <div class="titlex">
-                <p><span class="jing">#</span>
-                    2023
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/2023/07/06/npm-link/">
-            <div class="list">
-                <div class="postname">
-                    npm link
-                </div>
-                <div class="posttime">
-                    July 6th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2023/07/06/fuxi/">
-            <div class="list">
-                <div class="postname">
-                    复习基础
-                </div>
-                <div class="posttime">
-                    July 6th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2023/04/04/performance-optimization/">
-            <div class="list">
-                <div class="postname">
-                    前端性能优化
-                </div>
-                <div class="posttime">
-                    April 4th
-                </div>
-            </div>
-        </a>
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
 </div>
     <div class="footer" id="footer">
