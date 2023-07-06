@@ -20,53 +20,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body id="bodyx">
-    <div class="hd logodiv">
-    <img src="/img/logo.png" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> Lynko 凛口 <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
-</div>
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/fanwenboL">Github</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            复习基础
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><blockquote>
+<p>JS中内层函数可以访问外层函数的变量，外层函数无法操作内存函数的变量的特性。我们把这个特性称作闭包。</p>
+</blockquote>
+<ul>
+<li>优点<ul>
+<li>隔离作用域，保护私有变量；有了闭包才有局部变量，要不然都是全局变量了。</li>
+<li>让我们可以使用回调，操作其他函数内部；</li>
+<li>变量长期驻扎在内存中，不会被内存回收机制回收，即延长变量的生命周期；</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>内层函数引用外层函数变量，内层函数占用内存。如果不释放内存，过多时，易引起内存泄露。（无法自动销户，就及时手动回收，使用后将函数的引用赋null。）</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
     
-    
-        
-        
-            <div class="titlex">
-                <p><span class="jing">#</span>
-                    2023
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/2023/07/06/fuxi/">
-            <div class="list">
-                <div class="postname">
-                    复习基础
-                </div>
-                <div class="posttime">
-                    July 6th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2023/04/04/performance-optimization/">
-            <div class="list">
-                <div class="postname">
-                    前端性能优化
-                </div>
-                <div class="posttime">
-                    April 4th
-                </div>
-            </div>
-        </a>
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
 </div>
     <div class="footer" id="footer">
