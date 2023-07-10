@@ -20,79 +20,31 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body id="bodyx">
-    <div class="hd logodiv">
-    <img src="/img/logo.png" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> Lynko 凛口 <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
-</div>
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/fanwenboL">Github</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            ellipsis
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h3 id="文字单行不换行-超出文字显示省略号"><a href="#文字单行不换行-超出文字显示省略号" class="headerlink" title="文字单行不换行,超出文字显示省略号"></a>文字单行不换行,超出文字显示省略号</h3><pre><code>    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+</code></pre>
+<h3 id="文字按照指定行数不换行，超出文字显示省略号"><a href="#文字按照指定行数不换行，超出文字显示省略号" class="headerlink" title="文字按照指定行数不换行，超出文字显示省略号"></a>文字按照指定行数不换行，超出文字显示省略号</h3><pre><code>    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2;//行数
+</code></pre>
+
+    </div>
+
     
-    
-        
-        
-            <div class="titlex">
-                <p><span class="jing">#</span>
-                    2023
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/2023/07/10/ellipsis/">
-            <div class="list">
-                <div class="postname">
-                    ellipsis
-                </div>
-                <div class="posttime">
-                    July 10th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2023/07/06/npm-link/">
-            <div class="list">
-                <div class="postname">
-                    npm link
-                </div>
-                <div class="posttime">
-                    July 6th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2023/07/06/fuxi/">
-            <div class="list">
-                <div class="postname">
-                    复习基础
-                </div>
-                <div class="posttime">
-                    July 6th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2023/04/04/performance-optimization/">
-            <div class="list">
-                <div class="postname">
-                    前端性能优化
-                </div>
-                <div class="posttime">
-                    April 4th
-                </div>
-            </div>
-        </a>
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
 </div>
     <div class="footer" id="footer">
